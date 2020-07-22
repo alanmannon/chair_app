@@ -1,0 +1,7 @@
+<% @chairs.each do |chair|%>
+<p><%= chair.id %></p>
+<p><%= chair.color %></p>
+<p><%= chair.weight %></p>
+<p><%= chair.style %></p>
+<p><img src="<%= chair.image_url %>" width="300" height="300"></p>
+<% end %>
