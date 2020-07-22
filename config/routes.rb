@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # end
 
   get "/chair" => "chair#index"
+  get "/chair/:id" => "chair#show"
 end
