@@ -1,0 +1,9 @@
+<form action="/chair/<%= @chair.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <p>id: <input type="integer" name="id" value="<%= @chair.id%>"></p>
+  <p>color: <input type="text" name="color" value="<%= @chair.color%>"></p>
+  <p>weight: <input type="text" name="weight" value="<%= @chair.weight%>"></p>
+  <p>style: <input type="text" name="style" value="<%= @chair.style%>"></p>
+  <p>Image Url: <input type="text" name="image_url" value="<%= @chair.image_url%>"></p>
+  <input type="submit" value="Update chair">
+</form> 

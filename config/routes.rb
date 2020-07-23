@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   # end
 
   get "/chair" => "chair#index"
+  get "/chair/new" => "chair#new"
+  post "/chair" => "chair#create"
   get "/chair/:id" => "chair#show"
+  get "/chair/:id/edit" => "chair#edit"
+  patch "/chair/:id" => "chair#update"
 end

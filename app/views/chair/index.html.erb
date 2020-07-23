@@ -1,5 +1,5 @@
 <% @chairs.each do |chair|%>
-<p><%= chair.id %></p>
+<p><a href="/chair/<%= chair.id %>"><%= chair.id %></a></p>
 <p><%= chair.color %></p>
 <p><%= chair.weight %></p>
 <p><%= chair.style %></p>
